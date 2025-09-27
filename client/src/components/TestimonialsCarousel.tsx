@@ -73,7 +73,7 @@ export default function TestimonialsCarousel() {
             What Our Clients Say
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Don't just take our word for it. Hear from pool owners across Port Charlotte and Punta Gorda.
+            We're proud to deliver 5-star service to every client. Here's what our customers are saying about their experience.
           </p>
         </div>
 
@@ -137,16 +137,16 @@ export default function TestimonialsCarousel() {
         {/* Stats */}
         <div className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto text-center">
           <div>
-            <div className="text-3xl font-bold text-primary">500+</div>
-            <div className="text-sm text-muted-foreground">Happy Clients</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold text-primary">4.9/5</div>
-            <div className="text-sm text-muted-foreground">Average Rating</div>
+            <div className="text-3xl font-bold text-primary">5★</div>
+            <div className="text-sm text-muted-foreground">Star Rating</div>
           </div>
           <div>
             <div className="text-3xl font-bold text-primary">100%</div>
-            <div className="text-sm text-muted-foreground">Satisfaction Rate</div>
+            <div className="text-sm text-muted-foreground">Crystal Clear</div>
+          </div>
+          <div>
+            <div className="text-3xl font-bold text-primary">24/7</div>
+            <div className="text-sm text-muted-foreground">Support</div>
           </div>
         </div>
       </div>
