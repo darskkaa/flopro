@@ -17,7 +17,7 @@ export default function Footer() {
               <img 
                 src={logoImage} 
                 alt="Flo Pro" 
-                className="h-16 w-auto"
+                className="h-20 w-auto"
               />
               <div className="flex flex-col">
                 <div className="text-2xl font-bold text-primary">Pool Service</div>
