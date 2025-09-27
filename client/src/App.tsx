@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import CookieConsent from "@/components/CookieConsent";
 import Home from "@/pages/Home";
 import NotFound from "@/pages/not-found";
 import { useEffect } from "react";
@@ -32,12 +33,25 @@ function App() {
     }
   }, []);
 
+  // Listen for cookie consent changes
+  useEffect(() => {
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'cookieConsent' && e.newValue === 'accepted') {
+        initGA();
+      }
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, []);
+
   return (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
           <Router />
+          <CookieConsent />
         </TooltipProvider>
       </ThemeProvider>
     </QueryClientProvider>

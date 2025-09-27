@@ -6,12 +6,19 @@ declare global {
   }
 }
 
-// Initialize Google Analytics
+// Initialize Google Analytics (only if cookies are accepted)
 export const initGA = () => {
   const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
+  const cookieConsent = localStorage.getItem('cookieConsent');
 
   if (!measurementId) {
     console.warn('Missing required Google Analytics key: VITE_GA_MEASUREMENT_ID');
+    return;
+  }
+
+  // Only initialize GA if user has accepted cookies
+  if (cookieConsent !== 'accepted') {
+    console.log('Google Analytics disabled - waiting for cookie consent');
     return;
   }
 
