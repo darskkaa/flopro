@@ -1,6 +1,7 @@
 import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
+import logoImage from '@assets/flopro_logo.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -12,9 +13,16 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="text-2xl font-bold text-primary">Flo Pro</div>
-              <Badge variant="outline">Pool Service</Badge>
+            <div className="flex items-center space-x-3">
+              <img 
+                src={logoImage} 
+                alt="Flo Pro Pool Service" 
+                className="h-12 w-auto"
+              />
+              <div className="flex flex-col">
+                <div className="text-2xl font-bold text-primary">Flo Pro</div>
+                <Badge variant="outline" className="w-fit">Pool Service</Badge>
+              </div>
             </div>
             <p className="text-muted-foreground text-sm">
               Worry-Free Pool Flow. Crystal Clear Guarantee. The best-in-class pool service 

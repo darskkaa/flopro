@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoImage from '@assets/flopro_logo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,9 +9,16 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
       <div className="container mx-auto px-4 flex h-16 items-center justify-between">
-        <div className="flex items-center space-x-2">
-          <div className="text-2xl font-bold text-primary">Flo Pro</div>
-          <div className="text-sm text-muted-foreground hidden sm:block">Pool Service</div>
+        <div className="flex items-center space-x-3">
+          <img 
+            src={logoImage} 
+            alt="Flo Pro Pool Service" 
+            className="h-10 w-auto"
+          />
+          <div className="flex flex-col">
+            <div className="text-2xl font-bold text-primary">Flo Pro</div>
+            <div className="text-sm text-muted-foreground hidden sm:block">Pool Service</div>
+          </div>
         </div>
 
         {/* Desktop Navigation */}
