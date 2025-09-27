@@ -1,0 +1,76 @@
+A **Product Requirements Document (PRD)** for the **Flo Pro** website redesign must focus on establishing a premium, best-in-class brand experience while maximizing lead generation specifically within the Port Charlotte and Punta Gorda areas of Florida.
+
+The following PRD outlines the requirements for an "extremely modern" website redo.
+
+***
+
+## Product Requirements Document: Flo Pro Website Redesign (The Premium Standard)
+
+| **Document Title** | Flo Pro Premium Pool Service Platform (MVP 2.0) |
+| :--- | :--- |
+| **Project Goal** | Redesign the website to be a **best-in-class** digital platform that converts premium local leads and supports automated client communication. |
+| **Service Area** | Port Charlotte, Punta Gorda, and West Charlotte County, FL. |
+| **Success Metric (Primary)**| 25% increase in **Qualified Lead Volume** (Leads with Service Address) within 90 days of launch. |
+
+---
+
+### 1. Vision and Strategic Objectives
+
+#### 1.1 Problem & Opportunity
+The current wireframer website is effective for a basic MVP but lacks the visual authority and advanced features required to capture high-value clients and justify a premium service positioning. The redesign must address this by creating a highly polished, trustworthy, and geographically focused digital storefront.
+
+#### 1.2 Core Value Proposition
+**"Worry-Free Pool Flow. Crystal Clear Guarantee. The Best-in-Class Pool Service in Port Charlotte & Punta Gorda."**
+
+---
+
+### 2. Design & User Experience (UX) Requirements
+
+The design must feel like a luxury service brand, emphasizing clarity, speed, and trust.
+
+| ID | Requirement | Specification | Rationale |
+| :--- | :--- | :--- | :--- |
+| **D.1** | **Visual Theme** | **Extremely Modern Dark Mode:** Deep charcoal or black background with crisp, **Pure White** text and **Aqua/Teal** as the sole primary accent color. The look must be minimalist and sophisticated. | Conveys luxury, cleanliness, and professionalism. |
+| **D.2** | **Hero Media** | The Hero section must feature either a **full-width, slow-motion video loop** of a pristine, clear pool or a high-resolution image with a **subtle parallax scroll effect.** | Creates an immediate "wow" factor and showcases the desired end-result (a clear pool). |
+| **D.3** | **Speed & Performance**| Page load speed must be **Sub-2.0 seconds** on mobile devices. All assets (images, fonts) must be optimized for maximum efficiency. | Essential for a "best-in-class" experience and a critical SEO factor. |
+| **D.4** | **Typography** | Use a clean, contemporary, legible sans-serif font (e.g., Manrope, Inter) for all body text, with a bolder, distinct font for headlines. | Ensures legibility and reinforces modern aesthetics. |
+| **D.5** | **Mobile Experience**| The site must be **100% Mobile-First**. Navigation, forms, and CTAs must be one-tap accessible without zooming on all screen sizes. | >70% of local service searches occur on mobile. |
+
+---
+
+### 3. Functional Requirements (What it Must Do)
+
+#### 3.1 Lead Generation & Conversion Funnel
+| ID | Component Name | Action / Logic | Priority |
+| :--- | :--- | :--- | :--- |
+| **F.1** | **Floating "Call/Quote" Button** | A small, sticky, high-contrast button fixed to the bottom-right of the screen on mobile, displaying the phone number and a 'Tap to Call' action. | **Must Have** (Highest conversion action) |
+| **F.2** | **Geo-Verification Tool** | Primary CTA in the Hero: **"Check Service Availability Now."** Captures the user's address/zip code. **Logic:** If in Port Charlotte/Punta Gorda, displays "You're Covered! See Plans." If outside, shows a friendly "We're Expanding Soon" message with an email capture. | **Must Have** (Filters unqualified leads immediately) |
+| **F.3** | **Digital Service Report Teaser** | A visual block showcasing a mock-up of the **"Digital Service Report"** (as an image) with a brief, benefit-focused description. | **Must Have** (Builds trust and justifies premium cost). |
+| **F.4** | **Quote Request Form** | Must be visually integrated into the footer/contact section. Fields: Name, Email, Phone, **Service Address (Required)**, Message, and a drop-down for **"Pool Type"** (e.g., Saltwater, Chlorine, Spa Only). | **Must Have** (Increases lead quality data). |
+
+#### 3.2 Authority & Trust Building
+| ID | Component Name | Content / Design Requirements | Priority |
+| :--- | :--- | :--- | :--- |
+| **F.5** | **Dynamic Testimonials**| Must feature 3-5 authentic testimonials. Must implement a **subtle carousel** or fade-in effect to rotate quotes automatically. | **Must Have** (Crucial for building trust with local clientele). |
+| **F.6** | **Local SEO Section** | A dedicated, text-heavy footer section or low-page section with optimized headings and copy explicitly mentioning: **Port Charlotte Pool Service, Punta Gorda Pool Care, West Charlotte County Pool Maintenance.** | **Must Have** (Critical for local search ranking). |
+| **F.7** | **Service Guarantee Badge** | A prominent, persistent badge (e.g., an icon with a checkmark) near the main CTAs labeled **"100% Crystal Clear Guarantee."** | **High Priority** (Addresses user pain point of service quality). |
+
+---
+
+### 4. Non-Functional & Technical Requirements
+
+| ID | Requirement Area | Specification |
+| :--- | :--- | :--- |
+| **NF.1** | **Tracking & Analytics** | Full integration with **Google Analytics 4 (GA4)** and **Google Tag Manager (GTM)**. All CTAs and form submissions must be tracked as conversion events. |
+| **NF.2** | **SEO Structure** | Clean, semantic HTML structure. All primary headings are H1, section titles are H2/H3. Must include schema markup (e.g., `LocalBusiness`, `Service`) to aid search visibility. |
+| **NF.3** | **CRM Integration** | Form submissions (F.4) must integrate directly with the company's chosen CRM (e.g., HubSpot, ServiceTitan) via API or Webhook to avoid manual data entry. |
+| **NF.4** | **Accessibility (A11Y)** | Must comply with **WCAG 2.1 AA** standards, including proper keyboard navigation, text color contrast, and alt text for all visual elements. |
+
+---
+
+### 5. Out of Scope (For MVP 2.0)
+
+* **Online Scheduling/Booking:** Clients cannot book a specific time slot directly on the site.
+* **Client Portal:** Functionality for existing clients to login, view history, or pay bills.
+* **Blog / Content Hub:** Development of a full content library (only the homepage is in scope).
+* **Payment Processing:** Accepting credit card payments directly on the site.
