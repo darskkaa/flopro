@@ -289,7 +289,17 @@ export default function HeroSection() {
                 <div className="bg-primary/20 border border-primary/30 rounded-md p-4">
                   <p className="text-primary font-semibold">🎉 You're Covered! See Plans</p>
                   <p className="text-sm text-white/80 mt-1">We provide premium service in your area</p>
-                  <Button size="sm" className="mt-3" data-testid="button-see-plans">
+                  <Button 
+                    size="sm" 
+                    className="mt-3" 
+                    data-testid="button-see-plans"
+                    onClick={() => {
+                      const contactSection = document.getElementById('contact');
+                      if (contactSection) {
+                        contactSection.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
+                  >
                     Get Your Quote
                   </Button>
                 </div>
@@ -312,7 +322,17 @@ export default function HeroSection() {
 
           {/* Secondary CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" variant="outline" className="bg-background/10 border-white/20 text-white hover:bg-background/20 backdrop-blur-sm">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="bg-background/10 border-white/20 text-white hover:bg-background/20 backdrop-blur-sm"
+              onClick={() => {
+                const servicesSection = document.getElementById('services');
+                if (servicesSection) {
+                  servicesSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
               View Our Services
             </Button>
             <p className="text-sm text-white/70">Serving Port Charlotte • Punta Gorda • West Charlotte County</p>
