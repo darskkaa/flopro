@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export default function FloatingCallButton() {
   const handleCall = () => {
-    console.log('Call button clicked - would trigger tel:+19415557665');
-    // In production: window.location.href = 'tel:+19415557665';
+    // Open phone dialer with the Flo Pro phone number
+    window.location.href = 'tel:+19415557665';
   };
 
   return (

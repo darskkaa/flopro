@@ -23,7 +23,11 @@ export default function Header() {
 
         {/* Call Button Desktop */}
         <div className="hidden md:block">
-          <Button size="sm" data-testid="button-call-desktop">
+          <Button 
+            size="sm" 
+            data-testid="button-call-desktop"
+            onClick={() => window.location.href = 'tel:+19415557665'}
+          >
             <span className="font-semibold">Call (941) 555-POOL</span>
           </Button>
         </div>
@@ -48,7 +52,15 @@ export default function Header() {
             <a href="#about" className="text-sm hover-elevate active-elevate-2 px-3 py-2 rounded-md" onClick={() => setIsMenuOpen(false)}>About</a>
             <a href="#testimonials" className="text-sm hover-elevate active-elevate-2 px-3 py-2 rounded-md" onClick={() => setIsMenuOpen(false)}>Reviews</a>
             <a href="#contact" className="text-sm hover-elevate active-elevate-2 px-3 py-2 rounded-md" onClick={() => setIsMenuOpen(false)}>Contact</a>
-            <Button size="sm" className="w-fit" data-testid="button-call-mobile">
+            <Button 
+              size="sm" 
+              className="w-fit" 
+              data-testid="button-call-mobile"
+              onClick={() => {
+                window.location.href = 'tel:+19415557665';
+                setIsMenuOpen(false);
+              }}
+            >
               <span className="font-semibold">Call (941) 555-POOL</span>
             </Button>
           </nav>
