@@ -8,16 +8,16 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b">
-      <div className="container mx-auto px-4 flex h-16 items-center justify-between">
-        <div className="flex items-center space-x-3">
+      <div className="container mx-auto px-4 flex h-20 sm:h-24 md:h-28 items-center justify-between">
+        <div className="flex items-center space-x-4">
           <img 
             src={logoImage} 
             alt="Flo Pro" 
-            className="h-16 w-auto"
+            className="h-20 w-auto sm:h-24 md:h-28"
           />
           <div className="flex flex-col">
-            <div className="text-2xl font-bold text-primary">Pool Service</div>
-            <div className="text-sm text-muted-foreground hidden sm:block">Professional Pool Care</div>
+            <div className="text-xl sm:text-2xl font-bold text-primary">Pool Service</div>
+            <div className="text-xs sm:text-sm text-muted-foreground hidden sm:block">Professional Pool Care</div>
           </div>
         </div>
 

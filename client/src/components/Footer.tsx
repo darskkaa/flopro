@@ -13,15 +13,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-4">
               <img 
                 src={logoImage} 
                 alt="Flo Pro" 
-                className="h-20 w-auto"
+                className="h-24 w-auto sm:h-28 md:h-32"
               />
               <div className="flex flex-col">
-                <div className="text-2xl font-bold text-primary">Pool Service</div>
-                <Badge variant="outline" className="w-fit">Professional Pool Care</Badge>
+                <div className="text-2xl sm:text-3xl font-bold text-primary">Pool Service</div>
+                <Badge variant="outline" className="w-fit text-xs sm:text-sm">Professional Pool Care</Badge>
               </div>
             </div>
             <p className="text-muted-foreground text-sm">
