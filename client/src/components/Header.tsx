@@ -12,12 +12,12 @@ export default function Header() {
         <div className="flex items-center space-x-3">
           <img 
             src={logoImage} 
-            alt="Flo Pro Pool Service" 
-            className="h-10 w-auto"
+            alt="Flo Pro" 
+            className="h-12 w-auto"
           />
           <div className="flex flex-col">
-            <div className="text-2xl font-bold text-primary">Flo Pro</div>
-            <div className="text-sm text-muted-foreground hidden sm:block">Pool Service</div>
+            <div className="text-2xl font-bold text-primary">Pool Service</div>
+            <div className="text-sm text-muted-foreground hidden sm:block">Professional Pool Care</div>
           </div>
         </div>
 

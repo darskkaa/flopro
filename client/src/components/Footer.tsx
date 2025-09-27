@@ -16,17 +16,17 @@ export default function Footer() {
             <div className="flex items-center space-x-3">
               <img 
                 src={logoImage} 
-                alt="Flo Pro Pool Service" 
-                className="h-12 w-auto"
+                alt="Flo Pro" 
+                className="h-16 w-auto"
               />
               <div className="flex flex-col">
-                <div className="text-2xl font-bold text-primary">Flo Pro</div>
-                <Badge variant="outline" className="w-fit">Pool Service</Badge>
+                <div className="text-2xl font-bold text-primary">Pool Service</div>
+                <Badge variant="outline" className="w-fit">Professional Pool Care</Badge>
               </div>
             </div>
             <p className="text-muted-foreground text-sm">
-              Worry-Free Pool Flow. Crystal Clear Guarantee. The best-in-class pool service 
-              serving Southwest Florida within 60 miles of Port Charlotte.
+              <span className="font-semibold text-primary">Flo Pro</span> delivers worry-free pool flow with crystal clear guarantee. 
+              The best-in-class pool service serving Southwest Florida within 60 miles of Port Charlotte.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors hover-elevate p-2 rounded-md">

@@ -50,10 +50,10 @@ export default function ServicesSection() {
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">Our Services</Badge>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Complete Pool Care Solutions
+            <span className="text-primary">Flo Pro</span> Complete Pool Care Solutions
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From routine maintenance to equipment care, we handle everything so you can simply enjoy your pool.
+            From routine maintenance to equipment care, <span className="font-semibold text-primary">Flo Pro</span> handles everything so you can simply enjoy your pool.
           </p>
         </div>
 

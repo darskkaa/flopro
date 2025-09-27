@@ -250,12 +250,12 @@ export default function HeroSection() {
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-            Worry-Free Pool Flow
+            <span className="text-primary">Flo Pro</span> Pool Service
           </h1>
           
           <p className="text-xl md:text-2xl font-light text-white/90 max-w-3xl mx-auto">
-            The <span className="text-primary font-semibold">best-in-class pool service</span> serving Southwest Florida within 60 miles of Port Charlotte.
-            Crystal clear guarantee with digital service reports.
+            Worry-free pool flow with <span className="text-primary font-semibold">crystal clear guarantee</span> serving Southwest Florida within 60 miles of Port Charlotte.
+            Digital service reports included.
           </p>
 
           {/* Geo-Verification Tool */}
