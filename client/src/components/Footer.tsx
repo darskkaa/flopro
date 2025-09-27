@@ -18,7 +18,7 @@ export default function Footer() {
             </div>
             <p className="text-muted-foreground text-sm">
               Worry-Free Pool Flow. Crystal Clear Guarantee. The best-in-class pool service 
-              in Port Charlotte & Punta Gorda, Florida.
+              serving Southwest Florida within 60 miles of Port Charlotte.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors hover-elevate p-2 rounded-md">
