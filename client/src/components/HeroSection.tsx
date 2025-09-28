@@ -17,9 +17,9 @@ export default function HeroSection() {
     setTimeout(() => {
       const addressLower = address.toLowerCase();
       
-      // Check for specific cities and zip codes within 60 miles of 33954
+      // Check for specific cities and zip codes in the SWFL area
       const isInServiceArea = 
-        // Major cities within 60 miles of 33954
+        // Major cities in the SWFL area
         addressLower.includes("port charlotte") || 
         addressLower.includes("punta gorda") ||
         addressLower.includes("north port") ||
@@ -35,7 +35,7 @@ export default function HeroSection() {
         addressLower.includes("labelle") ||
         addressLower.includes("clewiston") ||
         addressLower.includes("immokalee") ||
-        // Zip codes within 60 miles of 33954
+        // Zip codes in the SWFL area
         addressLower.includes("33948") || // Port Charlotte
         addressLower.includes("33950") || // Punta Gorda
         addressLower.includes("33952") || // Port Charlotte
@@ -254,7 +254,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-xl md:text-2xl font-light text-white/90 max-w-3xl mx-auto">
-            Worry-free pool flow with <span className="text-primary font-semibold">crystal clear guarantee</span> serving Southwest Florida within 60 miles of Port Charlotte.
+            Worry-free pool flow with <span className="text-primary font-semibold">crystal clear guarantee</span> serving the SWFL area including Port Charlotte, Punta Gorda, Englewood, PGI, and surrounding communities.
             Digital service reports included.
           </p>
 

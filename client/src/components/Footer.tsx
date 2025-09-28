@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
             <p className="text-muted-foreground text-sm">
               <span className="font-semibold text-primary">Flo Pro</span> delivers worry-free pool flow with crystal clear guarantee. 
-              The best-in-class pool service serving Southwest Florida within 60 miles of Port Charlotte.
+              The best-in-class pool service serving the SWFL area including Port Charlotte, Punta Gorda, Englewood, PGI, and surrounding communities.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors hover-elevate p-2 rounded-md">
@@ -61,6 +61,14 @@ export default function Footer() {
               <li className="flex items-center space-x-2">
                 <MapPin className="h-3 w-3 text-primary" />
                 <span>Punta Gorda, FL</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <MapPin className="h-3 w-3 text-primary" />
+                <span>Englewood, FL</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <MapPin className="h-3 w-3 text-primary" />
+                <span>PGI (Punta Gorda Isles)</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-3 w-3 text-primary" />
